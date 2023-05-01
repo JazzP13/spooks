@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  
+}
+body{
+	background-image: url(img/2.gif);
+	background-size: cover;
+  background-color: rgba(20, 4, 2, 0.726);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+.navbar{
+  width: 100%;
+  background: #531b2588;
+  box-shadow: #42030e57;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .logo{
+  margin: 1px 0px;
+  padding: 2px;
+}
+
+img{
+  height: 70px;
+  width: auto;
+  margin-left: 3rem;
+}
+
+.nav-manu ul{
+  display: flex;
+  padding: 30px;
+}
+
+.nav-manu ul li{
+  list-style: none;
+  padding: 1px 25px;
+}
+.nav-manu ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffff;
+  text-transform: uppercase;  
+}
+.nav-manu ul li a:hover{
+  color: #c70909;
+  transition: 0.2s ease;
+}
+
+.toggle-btn{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 22px;
+  width: 32px;
+}
+.toggle-btn .bar{
+  height: 4px;
+  width: 100%;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+.content{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content h1{
+  font-size: 130px;
+  color: #fcfcfc;
+  font-weight: bolder;
+  margin-top: 10rem;
+}
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color: #ddd;
+  font-size: 23px;
+  padding: 14px 70px;
+  border-radius: 35px;
+  margin: 20px;
+  background: #8a0519;
+}
+
+.content a:hover{
+  transition: 0.s ease;
+  color: #86041a;
+  background: whitesmoke;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .toggle-btn{
+      display: flex;
+  }
+  .nav-manu{
+      display: none;
+      width: 100%;
+  }
+  .navbar{
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .nav-manu ul{
+      width: 100%;
+      background-color: #02172250;
+      flex-direction: column;
+      padding-right: 0px;
+  }
+  .nav-manu ul li{
+      padding-left: 30px;
+  }
+  .nav-manu ul li a{
+      font-size: 17px;
+  }
+  .nav-manu.active{
+      display: flex;
+  }
+
+  body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .content h1{
+    font-size: 80px;
+  }
+}

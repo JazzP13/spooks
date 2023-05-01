@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-image: url(img/b2.jpg);
+	background-size: cover;
+/* 	color: white; */ 
+
+}
+
+.logo h1{
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+  color: #8a7e7e;
+  padding-left: 5rem;
+}
+
+.navbar{
+  width: 100%;
+  background:   #531b2588;
+  box-shadow: #42030e57;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.nav-manu ul{
+  display: flex;
+  padding: 30px;
+}
+
+.nav-manu ul li{
+  list-style: none;
+  padding: 1px 25px;
+}
+.nav-manu ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffff;
+  text-transform: uppercase;  
+}
+.nav-manu ul li a:hover{
+  color: #c70909;
+  transition: 0.2s ease;
+}
+
+.toggle-btn{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 22px;
+  width: 32px;
+}
+.toggle-btn .bar{
+  height: 4px;
+  width: 100%;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: none;
+    font-size:  80px;
+    color: #f2f2f2;
+    text-shadow: #080001;
+}
+
+.content{
+  padding-top: 7rem;
+}
+
+p{
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px){
+  .toggle-btn{
+      display: flex;
+  }
+  .nav-manu{
+      display: none;
+      width: 100%;
+  }
+  .navbar{
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .nav-manu ul{
+      width: 100% ;
+      background-color: #02172250;
+      flex-direction: column;
+      padding-right: 0px;
+      justify-content: end;
+      align-items: end;
+  }
+  .nav-manu ul li{
+      padding-left: 30px;
+  }
+  .nav-manu ul li a{
+      font-size: 17px;
+  }
+  .nav-manu.active{
+      display: flex;
+  }
+
+  body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .content h1{
+    font-size: 50px;
+  }
+}
